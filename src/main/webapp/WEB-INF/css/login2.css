@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+   box-sizing: border-box;
+  }
+  
+  
+  .container1
+  {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: linear-gradient(#15A701 , #1EAE98) no-repeat 0 0 / cover;
+    width: 900px;
+    height: 500px;
+    margin: 10% auto;;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  }
+  
+  .content-holder
+  {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    padding: 25px;
+  }
+  
+  .content-holder h2
+  {
+    font-size: 28px;
+    margin: 20px auto;
+  }
+  
+  .content-holder p
+  {
+    margin: 30px auto;
+  }
+  
+  .content-holder button
+  {
+    border:none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    width: 150px;
+    margin: 20px auto;
+  }
+  
+  
+  .box-2{
+    background-color: white;
+    padding:5%;
+    margin: 10px;
+  }
+  
+  .student-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+  
+  }
+  
+  .student-form-container h1
+  {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .input-field
+  {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(168, 168, 168);
+    width: 250px;
+    outline: none;
+  }
+  
+  .login-student-button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 7px;
+    width: 250px;
+    outline: none;
+    background-color:#1EAE98;  
+    border: 1px solid #1EAE98;
+  }
+ 
+  .teacher-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+  }
+
+  .teacher-form-container h1
+  {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .login-teacher-button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 7px;
+    width: 250px;
+    outline: none; 
+    background-color:#FF7682; border: 1px solid #FF7682
+  }
+
+  .mentor-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+  }
+
+  .mentor-form-container h1
+  {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .login-mentor-button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 7px;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: rgb(32, 79, 182);  
+  }
+  
+  button:active {
+    transform: scale(0.85);
+}
+
+/* --------------reponse-------------- */
+ @media only screen and (max-width: 768px) {
+  .container1 {
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: auto;
+    margin: 10% auto;
+  }
+
+  .content-holder {
+    margin-top: 5%;
+  }
+
+  .box-2 {
+    margin: 10px auto;
+  }
+
+  .student-form-container,
+  .teacher-form-container,
+  .mentor-form-container {
+    top: 40%;
+  }
+
+  .input-field,
+  .login-student-button,
+  .login-teacher-button,
+  .login-mentor-button {
+    width: 80%;
+  }
+  
+  .mentor-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+  }
+  
+  .teacher-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+  }
+  
+   .student-form-container
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+  
+  }
+  
+  /* Basic button styles */
+.button-1, .button-2, .button-3 {
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    width: 150px;
+    margin: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+   
+}
+
+/* Color styles for buttons */
+.button-1 { background-color: #007bff; color: white; }
+.button-2 { background-color: #28a745; color: white; }
+.button-3 { background-color: #dc3545; color: white; }
+
+/* Align buttons to the right */
+.content-holder {
+    text-align: right;
+}
+
+/* Enlarged button styles */
+.enlarged {
+    transform: scale(1.2); /* Scale the button up */
+    z-index: 10; /* Ensure it's on top */
+}
+  
+  
+
+  
+} 
+
+
+
+ 
